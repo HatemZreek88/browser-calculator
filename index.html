@@ -1,0 +1,302 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- add a header!-->
+<!-- <header>
+      <h1>CALCULATION X</h1>
+    </header>
+    <!--add main-->
+<!-- <main>
+      add a section
+      <section>
+        <!--add a form-->
+
+<!-- <form action="#">
+          <div id="first">
+            <legend>Basic Arithmetic</legend>
+            <!--add text fields-->
+<!-- <label for="firstNumber">
+              <input type="number" id="firstNumber" name="firstNumber" /> -->
+<!-- </label>
+            <label for="secondNumber"
+              >+
+              <input type="number" id="secondNumber" name="secondNumber" />
+            </label>
+            <label for="plus"
+              >= -->
+<!-- <input type="number" id="plus" name="plus" />
+            </label>
+            <label for="thirdNumber">
+              <input type="number" id="thirdNumber" name="thirdNumber" />
+            </label>
+            <label for="fourthNumber"
+              >-
+              <input type="number" id="fourthNumber" name="fourthNumber" />
+            </label>
+            <label for="subtract"
+              >= -->
+<!-- <input type="number" id="subtract" name="subtract" />
+            </label> -->
+<!-- <label for="fifthNumber">
+              <input type="number" id="fifthNumber" name="fifthNumber" />
+            </label>
+            <label for="sixthNumber"
+              >x
+              <input type="number" id="sixthNumber" name="sixthNumber" />
+            </label>
+            <label for="multiplication"
+              >= -->
+<!-- <input type="number" id="multiplication" name="multiplication" />
+            </label>
+            <label for="seventhNumber">
+              <input type="number" id="seventhNumber" name="seventhNumber" />
+            </label> -->
+<!-- <label for="eighthNumber"
+              >/
+              <input type="number" id="eighthNumber" name="eighthNumber" />
+            </label>
+            <label for="division"
+              >=
+              <input type="number" id="division" name="division" />
+            </label>
+          </div>
+
+          <legend>Special Operations</legend>
+          <label>modulo</label>
+          <label for="ninthNumber">
+            <input type="number" id="ninthNumber" name="ninthNumber" />
+          </label>
+          <label for="tenthNumber"
+            >%
+            <input type="number" id="tenthNumber" name="tenthNumber" />
+          </label>
+          <label for="modulo"
+            >=
+            <input type="number" id="modulo" name="modulo" />
+          </label>
+        </form>
+      </section>
+    </main>
+    <noscript> -->
+<!-- <p>
+        Please
+        <a href="https://www.enable-javascript.com/">enable JavaScript</a> for a -->
+<!-- better user experience
+      </p>
+    </noscript>
+    <script src="script.js"></script> -->
+<!-- </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator X</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="jumbotron jumbotron-fluid bg-warning">
+        <div class="container">
+          <h1 class="text-center text-uppercase align-middle">
+            <i class="fas fa-calculator"></i>
+            Calculation X
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Basic Arithmetic</h2>
+        <form>
+          <div class="form-row align-items-center mb-3">
+            <div class="col">
+              <input
+                type="number"
+                id="add_1"
+                class="operand form-control"
+                value="0"
+                step="1"
+              />
+            </div>
+            <span class="operator font-weight-bold lead">+</span>
+            <div class="col">
+              <input
+                type="number"
+                id="add_2"
+                class="operand form-control"
+                value="0"
+                step="1"
+              />
+            </div>
+            <span class="operator font-weight-bold lead">=</span>
+            <div class="col">
+              <input
+                type="number"
+                id="add_result"
+                readonly
+                class="result form-control"
+                value="0"
+                data-operation="add"
+              />
+            </div>
+          </div>
+
+          <div class="form-row align-items-center mb-3">
+            <div class="col">
+              <input
+                type="number"
+                id="subtract_1"
+                class="operand form-control"
+                value="0"
+                step="1"
+              />
+            </div>
+            <span class="operator font-weight-bold lead">-</span>
+            <div class="col">
+              <input
+                type="number"
+                id="subtract_2"
+                class="operand form-control"
+                value="0"
+                step="1"
+              />
+            </div>
+            <span class="operator font-weight-bold lead">=</span>
+            <div class="col">
+              <input
+                type="number"
+                id="subtract_result"
+                readonly
+                class="result form-control"
+                value="0"
+                data-operation="subtract"
+              />
+            </div>
+          </div>
+
+          <div class="form-row align-items-center mb-3">
+            <div class="col">
+              <input
+                type="number"
+                id="multiply_1"
+                class="operand form-control"
+                value="0"
+                step="1"
+              />
+            </div>
+            <span class="operator font-weight-bold lead">&times;</span>
+            <div class="col">
+              <input
+                type="number"
+                id="multiply_2"
+                class="operand form-control"
+                value="0"
+                step="1"
+              />
+            </div>
+            <span class="operator font-weight-bold lead">=</span>
+            <div class="col">
+              <input
+                type="number"
+                id="multiply_result"
+                readonly
+                class="result form-control"
+                value="0"
+                data-operation="multiply"
+              />
+            </div>
+          </div>
+
+          <div class="form-row align-items-center mb-3">
+            <div class="col">
+              <input
+                type="number"
+                id="divide_1"
+                class="operand form-control"
+                value="0"
+                step="0.01"
+              />
+            </div>
+            <span class="operator font-weight-bold lead">&divide;</span>
+            <div class="col">
+              <input
+                type="number"
+                id="divide_2"
+                class="operand form-control"
+                value="0"
+                step="0.01"
+              />
+            </div>
+            <span class="operator font-weight-bold lead">=</span>
+            <div class="col">
+              <input
+                type="number"
+                id="divide_result"
+                readonly
+                class="result form-control"
+                value="0"
+                data-operation="divide"
+              />
+            </div>
+          </div>
+        </form>
+
+        <h2>Special operations</h2>
+        <form>
+          <legend>Modulo</legend>
+          <div class="form-row align-items-center mb-3">
+            <div class="col">
+              <input
+                type="number"
+                id="modulo_1"
+                class="operand form-control"
+                value="0"
+                step="1"
+              />
+            </div>
+            <span class="operator font-weight-bold lead">%</span>
+            <div class="col">
+              <input
+                type="number"
+                id="modulo_2"
+                class="operand form-control"
+                value="0"
+                step="1"
+              />
+            </div>
+            <span class="operator font-weight-bold lead">=</span>
+            <div class="col">
+              <input
+                type="number"
+                id="modulo_result"
+                readonly
+                class="result form-control"
+                value="0"
+                data-operation="modulo"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
